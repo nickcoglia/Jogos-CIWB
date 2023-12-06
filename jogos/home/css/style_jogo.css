@@ -1,0 +1,439 @@
+/* --ROXOS:--
+MediumPurple = #9370DB
+BlueViolet = #8A2BE2
+RebeccaPurple = #663399 //
+Indigo =  #4B0082
+
+--TÍTULO:--
+LightSeaGreen = #20B2AA
+Chocolate = #D2691E
+
+--BOTÃO:--
+LightSeaGreen = #20B2AA
+Indigo =  #4B0082
+Chocolate = #D2691E
+
+--LINKS:--
+White = #FFFFFF
+Lavender = #E6E6FA
+
+--BACKGROUND-COLOR:--
+Lavender = #E6E6FA
+Thistle = #D8BFD8
+PeachPuff = #FFDAB9 */
+
+@font-face {
+  font-family: 'font_pixel';
+  src: url('fonts/Retro\ Gaming.ttf');
+}
+
+body {
+  text-align: center;
+  font-family: 'font_pixel';
+  background: #1f1f20;
+  overflow: auto;
+}
+
+.container {
+  border-radius: 5px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: -5px;
+}
+
+.containerJogo {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#tutorialButton {
+  background-color: rgb(56, 54, 54);
+  border: rgb(56, 54, 54);
+}
+
+#tutorialButton:hover {
+  background-color: rgb(148, 141, 141);
+  border: rgb(148, 141, 141);
+}
+
+#navbar {
+  background-color: #151414 !important;
+}
+
+
+#titulo {
+  color: white !important;
+  font-size: 3.5rem;
+}
+
+
+a {
+  color: white !important;
+  font-weight: 50rem;
+}
+
+.pulse-button {
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo {
+  height: 70px;
+}
+
+#nav-link {
+  font-weight: 30rem;
+}
+
+#cenario {
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 600px;
+  border-radius: 5px;
+  border: solid 10px#9370DB;
+}
+
+#texto {
+  position: absolute;
+  z-index: 2;
+  width: 700px;
+  bottom: 60px;
+  left: 350px;
+}
+
+.falas {
+  position: relative;
+  z-index: 3;
+  bottom: 110px;
+  right: 0px;
+  margin: 0 auto;
+  left: -20px;
+}
+
+.falasTexto {
+  font-size: 15px;
+  color: rgb(65, 65, 65);
+}
+
+.botoes {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botaoRespostas {
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #a27fe9;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  padding: 20px;
+  position: relative;
+  z-index: 4;
+  width: 400px;
+}
+
+.botaoRespostas:active {
+  box-shadow: inset -4px 4px 0 #222;
+
+}
+
+#verGatinhoBtn {
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #a27fe9;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  padding: 20px;
+  position: relative;
+  z-index: 4;
+  width: 400px;
+  top: 10px;
+  font-family: 'font_pixel';
+}
+
+.imagemGatinhos {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.gatito {
+  width: 400px;
+  animation: giraGatinho 5s forwards linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  top: 350px;
+  left: 500px;
+}
+
+.nomeGatinhoDiv {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.nomeGatinhoh2 {
+  width: 400px;
+  position: absolute;
+  z-index: 3;
+  top: 350px;
+  left: 500px;
+
+}
+
+.iniciarAnimacao {
+  animation: subirTexto 5s forwards linear;
+}
+
+@keyframes subirTexto {
+  from {
+    top: 350px;
+  }
+
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes giraGatinho {
+  from {
+    width: 0px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    width: 300px;
+    transform: rotate(360deg);
+  }
+}
+
+.container-img {
+  width: 100%;
+  height: 100%;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  background-color: #20B2AA;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll-to-top2 {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  /* Alterado de left para right */
+  background-color: #20B2AA;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll-to-top:hover {
+  background-color: #177e79;
+}
+
+#titulo4 {
+  font-size: 3.5rem;
+}
+
+.card-body,
+.card-img-top {
+  background-color: #444;
+}
+
+.nome {
+  color: white;
+  font-size: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+
+/* CSS para tornar a página responsiva */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  #navbar {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+
+  #cenario {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  #texto {
+    width: 90%;
+    left: 10px;
+    bottom: 50px;
+  }
+
+  .falas {
+    bottom: 60px;
+    font-size: 0.8rem;
+  }
+
+  .botaoRespostas {
+    width: 62%;
+    position: relative;
+  }
+
+  #scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gatito {
+    width: 20%;
+    height: auto;
+    top: 18%;
+    left: 10%;
+    transform: translate(-20%, -20%);
+  }
+
+  .nomeGatinhoh2-iniciarAnimacao {
+    left: -10px;
+  }
+
+  .falasTexto {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  #navbar {
+    padding: 8px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+
+  #cenario {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  #texto {
+    width: 90%;
+    left: 10px;
+    bottom: 50px;
+  }
+
+  .falas {
+    bottom: 60px;
+    font-size: 0.8rem;
+  }
+
+  .botaoRespostas {
+    width: 62%;
+    position: relative;
+
+  }
+
+  #scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gatito {
+    width: 20%;
+    height: auto;
+    top: 18%;
+    left: 10%;
+    transform: translate(-20%, -20%);
+  }
+
+  .nomeGatinhoh2-iniciarAnimacao {
+    left: -10px;
+  }
+
+  .falasTexto {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}

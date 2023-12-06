@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'font_pixel'; 
+    src: url('fonts/Retro\ Gaming.ttf'); 
+}
+
+body {
+    text-align: center;
+    font-family: 'font_pixel', sans-serif;    
+    background: #1f1f20;
+    font-size: large;
+    overflow: auto;
+    /* background-color: #dfbff0;  */
+}
+
+#navbar{
+    background-color: #151414 !important;
+}
+
+#logo{
+    height: 70px;
+}
+
+a{
+    color: white !important;
+    font-weight: 50rem;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    background-color: #dbd7db;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+
+.container-game {
+    align-items: center;
+    width: 965px;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 590px;
+    padding: 24px;
+    background: linear-gradient(135deg,  #9370DB 0%,#C78BA7 50%,#F5B5D3 100% );
+    border-radius: 5px;
+ }
+
+.count {
+    color: #fff;
+    font-size: 14pt;
+}
+
+#board{
+    margin-bottom: 30px;
+}
+
+#playButton{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#board img {
+    width: 50px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+  }
+
+.botao {
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 14pt;
+    color: #a27fe9;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    padding: 1px;
+    width:150px;
+    height: 38px;
+    margin-top: 8px;
+}
+
+.botao2 {
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 14pt;
+    color: #a27fe9;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    padding: 1px;
+    width: 350px;
+    height: 38px;
+    margin-top: 8px;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #scroll-to-top2 {
+    position: fixed;
+    bottom: 10px;
+    right: 5px; /* Alterado de left para right */
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
